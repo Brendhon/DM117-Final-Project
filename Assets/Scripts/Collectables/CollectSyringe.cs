@@ -11,6 +11,9 @@ public class CollectSyringe : MonoBehaviour
         // Play audio
         syringeFX.Play();
 
+        // Update counter
+        CollectableController.syringeCount += 1;
+
         // Hide object
         this.gameObject.SetActive(false);
     }

@@ -36,7 +36,7 @@ public class GenerateLevel : MonoBehaviour
         zPos += 100;
 
         // Wait 2 seconds to create another section
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(10);
 
         // Set creating to false
         creatingSection = false;
