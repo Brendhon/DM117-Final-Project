@@ -2,7 +2,7 @@
 
 ## ❓ Sobre o projeto
 
-Jogo criado para trabalho final da disciplina DM117 (Desenvolvimento de jogos com Unity) na **Pós em Dispositivos Móveis e Computação em Nuvem** pelo **[INATEL](https://inatel.br/home/)**.
+Jogo criado para o trabalho final da disciplina DM117 (Desenvolvimento de jogos com Unity) na **Pós em Dispositivos Móveis e Computação em Nuvem** pelo **[INATEL](https://inatel.br/home/)**.
 
 ---
 
