@@ -6,7 +6,7 @@ public class LevelBoundary : MonoBehaviour
 {
 
     public static float leftSideLimit = -3.5f;
-    public static float rightSideLimit = 3.5f;
+    public static float rightSideLimit = 4.5f;
     public float internalLeft;
     public float internalRight;
 
