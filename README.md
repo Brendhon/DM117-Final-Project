@@ -17,7 +17,8 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 - Editor:  **[Visual Studio](https://visualstudio.microsoft.com/pt-br/downloads/)**
 - Assets: 
   - **[Unity Asset Store](https://assetstore.unity.com/)**
-  - **[Mixkit](https://assetstore.unity.com/)**
+  - **[Mixkit](https://mixkit.co/free-stock-music/)**
+  - **[Mixamo](https://www.mixamo.com/)**
 
 ---
 ## ⚙️ Como executar o projeto
@@ -36,14 +37,24 @@ $ git clone https://github.com/Brendhon/DM117-Final-Project.git
 
 ```
 
+**Obs:** Na criação desse projeto foi usando o **WebGL**. Caso queria utilizar em outra plataforma alguns ajustes podem ser necessários.
+
 ---
 
-## 👥 Autor
+## 👥 Autores
 <img style="border-radius: 20%;" src="https://avatars.githubusercontent.com/u/52840078?v=4" width="120px;" alt="120px"/><br>
 **Brendhon Moreira**
 
 [![Linkedin Badge](https://img.shields.io/badge/-Brendhon-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brendhon-moreira)](https://www.linkedin.com/in/brendhon-moreira)
 [![Gmail Badge](https://img.shields.io/badge/-brendhon.e.c.m@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:brendhon.e.c.m@gmail.com)](mailto:brendhon.e.c.m@gmail.com)
+
+<br>
+
+<img style="border-radius: 20%;" src="https://avatars.githubusercontent.com/u/36972044?v=4" width="120px;" alt="120px"/><br>
+**Luiz Fhelipy**
+
+[![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lf-teixeira/)](https://www.linkedin.com/in/lf-teixeira/)
+[![Gmail Badge](https://img.shields.io/badge/-fhelipyrt@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:fhelipyrt@gmail.com)](mailto:fhelipyrt@gmail.com)
 
 ---
 ## 📝 License
