@@ -5,15 +5,14 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     // Speed flag
-    public float speed = 3;
-    public float horizontalSpeed = 4;
+    public float speed = 1;
+    public float horizontalSpeed = 1;
     static public bool canMove = false;
     public GameObject charModel;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -56,7 +55,22 @@ public class PlayerMove : MonoBehaviour
             if((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
             {
                 charModel.GetComponent<Animator>().Play("Jump");
+
+                StartCoroutine(ExampleCoroutine());
             }
         }
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        // Move player
+        transform.Translate(horizontalSpeed * Time.deltaTime * Vector3.up, Space.World);
+
+        //yield on a new YieldInstruction that waits for 0,6 seconds.
+        yield return new WaitForSeconds(0.6f);
+
+        // Move player
+        transform.Translate(-horizontalSpeed * Time.deltaTime * Vector3.up, Space.World);
+
     }
 }
