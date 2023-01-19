@@ -10,11 +10,13 @@ public class CollectableController : MonoBehaviour
 
     // Get Reference to counter
     public GameObject syringeCounterDisplay;
+    public GameObject syringeEndDisplay;
 
     // Update is called once per frame
     void Update()
     {
         // Update counter display
         syringeCounterDisplay.GetComponent<Text>().text = "" + syringeCount;
+        syringeEndDisplay.GetComponent<Text>().text = "" + syringeCount;
     }
 }
