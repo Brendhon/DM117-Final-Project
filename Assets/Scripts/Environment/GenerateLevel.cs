@@ -7,7 +7,7 @@ public class GenerateLevel : MonoBehaviour
 {
     // Attributes
     public GameObject[] section;
-    public int zPos = 100;
+    public int zPos = 200;
     public bool creatingSection = false;
     public int secNum;
 
