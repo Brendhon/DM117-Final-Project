@@ -19,6 +19,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
   - **[Unity Asset Store](https://assetstore.unity.com/)**
   - **[Mixkit](https://mixkit.co/free-stock-music/)**
   - **[Mixamo](https://www.mixamo.com/)**
+  - **[Pixabay](https://pixabay.com/music/search/apocalypse/)**
 
 ---
 ## ⚙️ Como executar o projeto
