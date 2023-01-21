@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+    GameObject camera;
+
     void Start()
     {
         
@@ -18,6 +19,15 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("CityRun", LoadSceneMode.Additive);
+        camera = GameObject.FindWithTag("MainCamera");
+        foreach (GameObject g in SceneManager.GetActiveScene().GetRootGameObjects())
+        {
+            if(camera != g)
+            {
+                g.SetActive(false);
+            }
+        }
+
     }
 }

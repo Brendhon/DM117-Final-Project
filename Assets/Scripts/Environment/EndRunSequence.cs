@@ -17,10 +17,10 @@ public class EndRunSequence : MonoBehaviour
 
     IEnumerator EndSequence()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         liveSerynges.SetActive(false);
         endScreen.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         FadeOut.SetActive(true);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(0);
