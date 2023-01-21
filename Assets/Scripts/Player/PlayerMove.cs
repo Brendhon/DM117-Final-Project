@@ -7,10 +7,10 @@ public class PlayerMove : MonoBehaviour
     // Speed flag
     public float speed = 1;
     public float horizontalSpeed = 1;
-    public float jump = 6;
+    public float jump = 0.5f;
     static public bool canMove = false;
-    public GameObject charModel;
     static public bool isJumping = false;
+    public GameObject charModel;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +57,7 @@ public class PlayerMove : MonoBehaviour
             if((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)) && isJumping == false)
             {
                 isJumping = true;
+
                 charModel.GetComponent<Animator>().Play("Jump");
 
                 StartCoroutine(ExampleCoroutine());
@@ -67,13 +68,14 @@ public class PlayerMove : MonoBehaviour
     IEnumerator ExampleCoroutine()
     {
         // Move player
-        transform.Translate(jump * Time.deltaTime * Vector3.up, Space.World);
+        transform.position += new Vector3(0, jump, 0);
 
-        //yield on a new YieldInstruction that waits for 0,6 seconds.
-        yield return new WaitForSeconds(0.6f);
+        //yield on a new YieldInstruction that waits for 0,7 seconds.
+        yield return new WaitForSeconds(0.7f);
 
         // Move player
-        transform.Translate(-jump * Time.deltaTime * Vector3.up, Space.World);
+        transform.position += new Vector3(0, -jump, 0);
+
         isJumping = false;
     }
 }
