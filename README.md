@@ -37,7 +37,9 @@ $ git clone https://github.com/Brendhon/DM117-Final-Project.git
 
 ```
 
-**Obs:** Na criação desse projeto foi usando o **WebGL**. Caso queria utilizar em outra plataforma alguns ajustes podem ser necessários.
+**Observações:** 
+  - Na criação desse projeto foi usando o **WebGL**. Caso queria utilizar em outra plataforma alguns ajustes podem ser necessários;
+  - Ao pegar 50 seringas a cura para o vírus é descoberta e o player vence.
 
 ---
 
