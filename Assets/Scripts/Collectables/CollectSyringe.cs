@@ -15,7 +15,7 @@ public class CollectSyringe : MonoBehaviour
         // Update counter
         CollectableController.syringeCount += 1;
 
-        if(CollectableController.syringeCount == 3)
+        if(CollectableController.syringeCount == 100)
         {
             levelControl.GetComponent<VictoryEndRunSequence>().enabled = true;
         }

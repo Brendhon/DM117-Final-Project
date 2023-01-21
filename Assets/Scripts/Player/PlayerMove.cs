@@ -7,9 +7,10 @@ public class PlayerMove : MonoBehaviour
     // Speed flag
     public float speed = 1;
     public float horizontalSpeed = 1;
-    public float jump = 2;
+    public float jump = 6;
     static public bool canMove = false;
     public GameObject charModel;
+    static public bool isJumping = false;
 
     // Start is called before the first frame update
     void Start()
@@ -53,8 +54,9 @@ public class PlayerMove : MonoBehaviour
                 transform.Translate(speedVector, Space.World);
             }
 
-            if((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)))
+            if((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)) && isJumping == false)
             {
+                isJumping = true;
                 charModel.GetComponent<Animator>().Play("Jump");
 
                 StartCoroutine(ExampleCoroutine());
@@ -72,6 +74,6 @@ public class PlayerMove : MonoBehaviour
 
         // Move player
         transform.Translate(-jump * Time.deltaTime * Vector3.up, Space.World);
-
+        isJumping = false;
     }
 }
