@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     // Speed flag
     public float speed = 1;
     public float horizontalSpeed = 1;
+    public float jump = 2;
     static public bool canMove = false;
     public GameObject charModel;
 
@@ -64,13 +65,13 @@ public class PlayerMove : MonoBehaviour
     IEnumerator ExampleCoroutine()
     {
         // Move player
-        transform.Translate(horizontalSpeed * Time.deltaTime * Vector3.up, Space.World);
+        transform.Translate(jump * Time.deltaTime * Vector3.up, Space.World);
 
         //yield on a new YieldInstruction that waits for 0,6 seconds.
         yield return new WaitForSeconds(0.6f);
 
         // Move player
-        transform.Translate(-horizontalSpeed * Time.deltaTime * Vector3.up, Space.World);
+        transform.Translate(-jump * Time.deltaTime * Vector3.up, Space.World);
 
     }
 }
